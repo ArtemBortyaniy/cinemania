@@ -1,7 +1,7 @@
 {
   "name": "cinemania",
   "version": "2.0.0",
-  "description": "cinemania team project",
+  "description": "cinemania project",
   "homepage": "https://ArtemBortyaniy.github.io/cinemania",
   "scripts": {
     "start": "parcel src/*.html",
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/ArtemBortyaniy/cinemania.git"
   },
   "keywords": [],
-  "author": "Viktor Svertoka <artembortianiy@gmail.com>",
+  "author": "Artem Bortianiy <artembortianiy@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ArtemBortyaniy/cinemania/issues"
