@@ -1,0 +1,166 @@
+// Стили для модального окна с видео
+.watch-modal {
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  // background-color: var(--backdrop-bgc);
+  // opacity: 0.2;
+  // background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  // backdrop-filter: blur(1px);
+  overflow: hidden;
+  z-index: 9999;
+}
+
+/* Модальное окно видео */
+.watch-modal__content {
+  margin: 15% auto;
+  padding: 20px;
+  // border: 1px solid #888;
+  width: 80%;
+  height: 60vh;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+  box-shadow: 1px 1px 14px 4px rgba(255, 107, 8, 0.42);
+  border-radius: 20px;
+  background-color: var(--page-bgc);
+  z-index: 9999;
+
+  @include mobile {
+    width: 280px; /* Ширина на мобильных устройствах */
+    height: 289px;
+    margin: 10% auto;
+    padding: 10px;
+  }
+
+  @include tablet {
+    width: 609px; /* Ширина на планшетах */
+    height: 400px;
+    margin: 10% auto;
+    padding: 20px;
+  }
+
+  @include desktop {
+    width: 700px; /* Ширина на настольных устройствах */
+    height: 400px;
+    margin: 10% auto;
+    padding: 30px;
+  }
+}
+
+/* Содержимое модального окна (видео) */
+.watch-modal__content iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Кнопка закрытия */
+.watch-modal__close {
+  position: absolute;
+  color: var(--modal-secondary-color);
+  width: 16px;
+  height: 16px;
+  left: 244px;
+  top: 20px;
+
+  @include tablet {
+    width: 24px;
+    height: 24px;
+    left: 561px;
+    top: 24px;
+  }
+
+  @include desktop {
+    width: 24px;
+    height: 24px;
+    left: 648px;
+    top: 28px;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  &.icon {
+    width: 16px;
+    height: 16px;
+    fill: inherit;
+  }
+}
+
+.watch-modal__error-message {
+  position: absolute;
+  width: 214px;
+  height: 65px;
+  left: 33px;
+  top: 39px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: left;
+  white-space: pre-line;
+
+  color: var(--modal--text-color);
+
+  @include tablet {
+    width: 321px;
+    height: 92px;
+    left: 44px;
+    top: 132px;
+
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  @include desktop {
+    width: 321px;
+    height: 100px;
+    left: 50px;
+    top: 150px;
+
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+/* Модальное окно ошибки */
+.modal-error {
+  display: flex;
+}
+
+.watch-modal__error-image {
+  position: absolute;
+  width: 159px;
+  height: 153px;
+  left: 61px;
+  top: 128px;
+  background-image: url('/src/images/watch-trailer-modal_mob_2x.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include tablet {
+    background-image: url('/src/images/watch-trailer-modal_tab_2x.png');
+    width: 296px;
+    height: 260px;
+    left: 303px;
+    top: 124px;
+  }
+
+  @include desktop {
+    background-image: url('/src/images/watch-trailer-modal_desk_2x.png');
+    width: 363px;
+    height: 318px;
+    left: 337px;
+    top: 77px;
+  }
+}

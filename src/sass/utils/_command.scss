@@ -1,0 +1,70 @@
+///БАЗОВЫЕ СТИЛИ
+
+// html {
+//   scroll-behavior: smooth;
+// }
+
+body {
+  color: var(--primary-text-clr);
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  letter-spacing: 0.04em;
+  background-color: var(--page-bgc);
+  @include animation(background-color);
+}
+
+body.is-open {
+  overflow: hidden;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+
+  @include mobile {
+    max-width: 320px;
+  }
+
+  @include tablet {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @include desktop {
+    max-width: 1280px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+.section {
+  @include mobile {
+    padding: 28px 0;
+  }
+
+  @include tablet {
+    padding: 40px 0;
+  }
+
+  @include desktop {
+    padding: 80px 0;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}

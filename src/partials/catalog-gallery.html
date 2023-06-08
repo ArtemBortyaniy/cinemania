@@ -1,0 +1,46 @@
+<section class="catalog section">
+  <div class="catalog__container container">
+    <form class="catalog__form" id="search-form">
+      <div class="catalog__form_wrapper">
+        <input
+          class="catalog__form-input"
+          type="text"
+          name="search"
+          id="searchQuery"
+          placeholder="Search"
+          autocomplete="off"
+        />
+
+        <button
+          class="catalog__form-button"
+          type="submit"
+          aria-label="search button"
+        >
+          <!-- <img class="catalog__icon" src="./images/search1.png" alt="" /> -->
+          <svg class="search__icon" width="20" height="20">
+            <use href="./images/sprite.svg#icon-search"></use>
+          </svg>
+        </button>
+      </div>
+    </form>
+    <!-- disabled container-->
+    <section class="cards">
+      <h2 class="visually-hidden" aria-label="film cards">Film cards</h2>
+      <ul class="cards__error" id="cards__error"></ul>
+      <div class="cards__container">
+        <div class="cards__message visually-hidden">
+          <p class="cards__text">
+            OOPS...<br />
+            We are very sorry!<br />
+            We don’t have any results due to your search.
+          </p>
+        </div>
+
+        <ul class="cards__list" id="movie-list"></ul>
+        <!-- <ul class="cards__eror" id="cards__eror"></ul> -->
+      </div>
+
+      <div class="pagination"></div>
+    </section>
+  </div>
+</section>

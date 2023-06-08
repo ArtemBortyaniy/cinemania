@@ -1,0 +1,29 @@
+///FOLDER BASE
+@import './base/normalize';
+@import './base/fonts';
+@import './base/colors';
+@import './base/cursor';
+
+///FOLDER UTILS
+@import './utils/reset';
+@import './utils/mixins';
+@import './utils/command';
+@import './utils/animations';
+
+///FOLDER COMPONENTS
+@import './components/scrollbar';
+@import './components/buttons';
+
+///FOLDER LAYOUTS
+@import './layout/header';
+@import './layout/catalog-gallery';
+@import './layout/footer';
+@import './layout/footer-modal-team';
+@import './layout/hero-modal-watch-trailer';
+@import './layout/hero';
+@import './layout/loader';
+@import './layout/modal-film';
+@import './layout/my-library';
+@import './layout/upcoming-mounth';
+@import './layout/weekly-trends';
+@import './layout/scroll-up';
